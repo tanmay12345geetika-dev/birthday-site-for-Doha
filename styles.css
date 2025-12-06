@@ -91,3 +91,13 @@ footer {
         transform: translateY(100vh) rotate(360deg);
     }
 }
+
+.genshin-img {
+    max-width: 100%; /* Prevents overflow by scaling down to fit container */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 10px;
+    margin: 10px;
+    display: block; /* Centers it if needed, or remove for inline */
+    margin-left: auto;
+    margin-right: auto; /* Centers the image horizontally */
+}
