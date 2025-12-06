@@ -1,0 +1,93 @@
+body {
+    font-family: 'Comic Sans MS', cursive; /* Playful font */
+    background: linear-gradient(to bottom, #ff1493); /* Pink gradient for Hello Kitty */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background: linear-gradient(to right, #D6213B, #447BBE); /* Spiderman red-blue */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #33;
+}
+
+.genshin-img {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.interactive {
+    margin: 20px 0;
+}
+
+#confetti-btn {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#confetti-btn:hover {
+    background: #D6213B;
+}
+
+.love-meter {
+    margin: 20px 0;
+}
+
+.quiz-btn {
+    margin: 1px;
+    padding: 10px;
+    background: #447BBE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quiz-btn:hover {
+    background: #D6213B;
+}
+
+footer {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* NEW: Confetti styles added here */
+
+
+.confetti {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #ff69b4, #ff1493, #0000ff, #ff0000); /* Mix of Hello Kitty pink and Spiderman colors */
+    border-radius: 50%;
+    animation: fall 2s linear infinite;
+    pointer-events: none;
+}
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
